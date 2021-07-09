@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <time>Family Book</time>
+
+        <style>
+            body {
+                text-align: center;
+            }
+            img {
+                width: 250;
+                height: 400;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1 style="font: bold;">My Family Book</h1>
+
+        <br><br>
+
+        <img src="D:\Kavya\Coding Project Documents\C 78\Project 78\Ramesh-Lajjawati.jpg" id="image">
+
+        <br>
+
+        <h3 id="name">Ramesh Chand Kodia & Lajjawati Devi Kodia</h3>
+
+        <br><br>
+
+        <button type="button" onclick="update();">Next</button>
+
+        <script>
+            var names = ["Ramesh Chand Kodia & Lajjawati Devi Kodia", "Pritesh Jain & Sharmila Jain", "Vipasha Jain", "Tanvi Jain", "Kavya Jain"]
+            var images = ["D:\Kavya\Coding Project Documents\C 78\Project 78\Ramesh-Lajjawati.jpg",
+                          "D:\Kavya\Coding Project Documents\C 78\Project 78\Pritesh-Sharmila.jpg",
+                          "D:\Kavya\Coding Project Documents\C 78\Project 78\Vipasha.jpg",
+                          "D:\Kavya\Coding Project Documents\C 78\Project 78\Tanvi.jpg",
+                          "D:\Kavya\Coding Project Documents\C 78\Project 78\Kavya-haldi.jpg"];
+
+            var i = 0;
+            function update() {
+                i++;
+
+                if(i > 4) {
+                    i = 0;
+                }
+
+                document.getElementById("name").innerHTML = names[i];
+                document.getElementById("image").src=images[i];
+            }
+        </script>
+    </body>
+</html>
