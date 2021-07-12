@@ -5,6 +5,7 @@
         <style>
             body {
                 text-align: center;
+                background-image: url("background.jpg");
             }
             img {
                 width: 250;
@@ -18,11 +19,15 @@
 
         <br><br>
 
+        <marquee direction="left">
+        <center>
         <img src="D:\Kavya\Coding Project Documents\C 78\Project 78\Ramesh-Lajjawati.jpg" id="image">
 
         <br>
 
         <h3 id="name">Ramesh Chand Kodia & Lajjawati Devi Kodia</h3>
+        </center>
+        </marquee>
 
         <br><br>
 
@@ -46,6 +51,12 @@
 
                 document.getElementById("name").innerHTML = names[i];
                 document.getElementById("image").src=images[i];
+
+                if(image==Vipasha.jpg,Tanvi.jpg) {
+                document.getElementById("image").style.width = 200;
+                } else {
+                    document.getElementById("image").style.width = 250;
+                }   
             }
         </script>
     </body>
